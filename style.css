@@ -28,6 +28,24 @@ main {
 
 .days {
     text-align: center;
+    padding: 30px 0 0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.crimson{
+    color: crimson;
+
+}
+
+.orange{
+    color: rgb(248, 108, 1);
+}
+
+
+
+figcaption{
+    display: block;
 }
 
 .header2 {
@@ -41,14 +59,23 @@ h2{
     display: block;
 }
 
+h5{
+    font-weight: bold;
+}
+
 .desc{
     text-align: center;
     color: gray;
     padding: 0px 10px;
+    height: 150px;
+    line-height: 1.3em;
+    font-size: 13px;
 }
 
 .num{
+    border-radius: 0 0 20px 20px;
     display: flex;
+    color: white;
 }
 
 .num>div{
@@ -56,6 +83,7 @@ h2{
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+
 }
 
 .cards {
@@ -71,14 +99,26 @@ h2{
     background: url(images/little_street.jpg);
 }
 
+.town3 {
+    background: url(images/mst.jpg);
+}
+
 .imgCard {
     width: inherit;
     height: 200px;
     background-position: center;
-    box-sizing: cover;
+    background-size: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .crimsonBack{
     background-color: crimson;
+}
+
+.orangeBack{
+    background-color: rgb(248, 108, 1);
+}
+
+.greenBack{
+    background-color: green;
 }
