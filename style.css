@@ -19,6 +19,8 @@ figure {
     min-width: 100px;
     border-radius: 20px;
     background: linear-gradient(to top, #E8ECEB, #C1C2C3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
 }
 
 main {
@@ -36,6 +38,10 @@ main {
 .crimson{
     color: crimson;
 
+}
+
+.green{
+    color: green;
 }
 
 .orange{
@@ -86,6 +92,11 @@ h5{
 
 }
 
+.num>div:nth-child(2){
+    border-left: 1px solid darkslategray;
+    border-right: 1px solid darkslategray;
+}
+
 .cards {
     display: flex;
     align-items: center;
@@ -122,3 +133,61 @@ h5{
 .greenBack{
     background-color: green;
 }
+
+
+
+/* Общие стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+
+    .cards{
+        display: inline;
+    }
+
+    /* Установка высоты body на авто */
+    body {
+      height: auto;
+    }
+  
+    /* Изменение ширины figure на 100% и убираем минимальную ширину */
+    figure {
+      width: 100%;
+      min-width: 0;
+    }
+  
+    /* Изменение высоты imgCard */
+    .imgCard {
+      height: 200px;
+    }
+  
+    /* Изменение размера шрифта */
+    .days, .header2, .desc, .number, .move {
+      font-size: 14px;
+    }
+  
+    /* Изменение отступов и выравнивания текста */
+    .days, .header2 {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    /* Изменение размеров контейнера с числами */
+    .num {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding: 0 10px;
+      font-size: 12px;
+    }
+  
+    /* Изменение размеров чисел и текста */
+    .number, .move {
+      font-size: 14px;
+    }
+  
+    /* Изменение отступов и выравнивания текста внутри num */
+    .number, .move {
+      margin: 0;
+      text-align: center;
+    }
+  
+  }
