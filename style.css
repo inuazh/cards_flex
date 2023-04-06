@@ -21,14 +21,26 @@ figure {
     background: linear-gradient(to top, #E8ECEB, #C1C2C3);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin: 10px;
+    transition: 0.7s;
 }
+
+figure:hover{
+    width: 400px;
+}
+
+figure:hover .desc{
+    font-size: 15px;
+    color: black;
+}
+
+
 
 main {
     display: flex;
     justify-content: center;
 }
 
-.days {
+.date {
     text-align: center;
     padding: 30px 0 0;
     font-weight: 700;
@@ -76,6 +88,7 @@ h5{
     height: 150px;
     line-height: 1.3em;
     font-size: 13px;
+    transition: 1s;
 }
 
 .num{
@@ -141,7 +154,10 @@ h5{
 
     .cards{
         display: inline;
+        padding: 10px;
     }
+
+    
 
     /* Установка высоты body на авто */
     body {
@@ -152,6 +168,9 @@ h5{
     figure {
       width: 100%;
       min-width: 0;
+      margin: 0;
+      margin-bottom: 2svh;
+    
     }
   
     /* Изменение высоты imgCard */
