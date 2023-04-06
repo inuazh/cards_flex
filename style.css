@@ -31,6 +31,13 @@ figure:hover{
 figure:hover .desc{
     font-size: 15px;
     color: black;
+    height: 200px;
+}
+
+figure:hover .imgCard{
+    height: 300px;
+    align-items: center;
+    filter: invert();
 }
 
 
@@ -133,6 +140,7 @@ h5{
     background-position: center;
     background-size: cover;
     border-radius: 20px 20px 0 0;
+    transition: 0.2s;
 }
 
 .crimsonBack{
