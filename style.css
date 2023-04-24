@@ -15,7 +15,7 @@ body {
     background: radial-gradient(ellipse at center, gray, black);
 }
 
-figure {
+.card{
     width: 25svw;
     min-width: 100px;
     border-radius: 20px;
@@ -25,17 +25,17 @@ figure {
     transition: 0.7s;
 }
 
-figure:hover{
+.card:hover{
     width: 400px;
 }
 
-figure:hover .desc{
+.card:hover .desc{
     font-size: 15px;
     color: black;
     height: 200px;
 }
 
-figure:hover .imgCard{
+.card:hover .imgCard{
     height: 300px;
     align-items: center;
     filter: invert();
@@ -55,7 +55,7 @@ main {
     font-size: 12px;
 }
 
-.crimson{
+.card__info_crimson{
     color: crimson;
 
 }
@@ -118,20 +118,20 @@ h5{
     border-right: 1px solid darkslategray;
 }
 
-.cards {
+.cards-container{
     display: flex;
     align-items: center;
 }
 
-.town1 {
+.card__image_town1 {
     background: url(images/Night_City_Kandinsky.jpg);
 }
 
-.town2 {
+.card__image_town2 {
     background: url(images/little_street.jpg);
 }
 
-.town3 {
+.card__image_town3 {
     background: url(images/mst.jpg);
 }
 
@@ -173,8 +173,8 @@ h5{
       height: auto;
     }
   
-    /* Изменение ширины figure на 100% и убираем минимальную ширину */
-    figure {
+    /* Изменение ширины .card на 100% и убираем минимальную ширину */
+    .card {
       width: 100%;
       min-width: 0;
       margin: 0;
