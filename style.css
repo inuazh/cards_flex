@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
+.body {
     font-family: 'Kanit', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-}
-  
-
-body {
     height: 97svh;
     display: flex;
     align-items: center;
@@ -15,7 +11,7 @@ body {
     background: radial-gradient(ellipse at center, gray, black);
 }
 
-.card{
+.card {
     width: 25svw;
     min-width: 100px;
     border-radius: 20px;
@@ -25,71 +21,64 @@ body {
     transition: 0.7s;
 }
 
-.card:hover{
+.card:hover {
     width: 400px;
 }
 
-.card:hover .desc{
+.card:hover .card__description {
     font-size: 15px;
     color: black;
     height: 200px;
 }
 
-.card:hover .imgCard{
+.card:hover .card__image {
     height: 300px;
     align-items: center;
     filter: invert();
 }
 
 
-
-main {
-    display: flex;
-    justify-content: center;
-}
-
-.date {
+.card__date {
     text-align: center;
     padding: 30px 0 0;
     font-weight: 700;
     font-size: 12px;
 }
 
-.card__info_crimson{
+.card__info_crimson {
     color: crimson;
 
 }
 
-.green{
+.card__info_green {
     color: green;
 }
 
-.orange{
+.card__info_orange {
     color: rgb(248, 108, 1);
 }
 
 
 
-figcaption{
+.card__caption {
     display: block;
 }
 
-.header2 {
+.card__title {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
-}
-
-h2{
     display: block;
 }
 
-h5{
+
+
+.card__info-number {
     font-weight: bold;
 }
 
-.desc{
+.card__description {
     text-align: center;
     color: gray;
     padding: 0px 10px;
@@ -99,13 +88,13 @@ h5{
     transition: 1s;
 }
 
-.num{
+.card__info {
     border-radius: 0 0 20px 20px;
     display: flex;
     color: white;
 }
 
-.num>div{
+.card__info>div {
     flex: 1 0 auto;
     text-align: center;
     padding: 20px;
@@ -113,12 +102,12 @@ h5{
 
 }
 
-.num>div:nth-child(2){
+.card__info>div:nth-child(2) {
     border-left: 1px solid darkslategray;
     border-right: 1px solid darkslategray;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
     align-items: center;
 }
@@ -135,7 +124,7 @@ h5{
     background: url(images/mst.jpg);
 }
 
-.imgCard {
+.card__image {
     width: inherit;
     height: 200px;
     background-position: center;
@@ -144,15 +133,15 @@ h5{
     transition: 0.2s;
 }
 
-.crimsonBack{
+.card__info_crimson {
     background-color: crimson;
 }
 
-.orangeBack{
+.card__info_orange {
     background-color: rgb(248, 108, 1);
 }
 
-.greenBack{
+.card__info_green {
     background-color: green;
 }
 
@@ -161,61 +150,64 @@ h5{
 /* Общие стили для мобильных устройств */
 @media only screen and (max-width: 600px) {
 
-    .cards{
+    .cards-container {
         display: inline;
         padding: 10px;
     }
 
-    
+
 
     /* Установка высоты body на авто */
-    body {
-      height: auto;
+    .body {
+        height: auto;
     }
-  
+
     /* Изменение ширины .card на 100% и убираем минимальную ширину */
     .card {
-      width: 100%;
-      min-width: 0;
-      margin: 0;
-      margin-bottom: 2svh;
-    
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        margin-bottom: 2svh;
+
     }
-  
+
     /* Изменение высоты imgCard */
-    .imgCard {
-      height: 200px;
+    .card__image {
+        height: 200px;
     }
-  
+
     /* Изменение размера шрифта */
-    .days, .header2, .desc, .number, .move {
-      font-size: 14px;
+    .card__date,
+    .card__title,
+    .card__description,
+    .card__info-number,
+    .card__info-text {
+        font-size: 14px;
     }
-  
+
     /* Изменение отступов и выравнивания текста */
-    .days, .header2 {
-      margin: 10px 0;
-      text-align: center;
+    .card__date,
+    .card__title {
+        margin: 10px 0;
+        text-align: center;
     }
-  
+
     /* Изменение размеров контейнера с числами */
-    .num {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-      padding: 0 10px;
-      font-size: 12px;
+    .card__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 0 10px;
+        font-size: 12px;
     }
-  
-    /* Изменение размеров чисел и текста */
-    .number, .move {
-      font-size: 14px;
+
+
+
+    .card__info-number,
+    .card__info-text {
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
     }
-  
-    /* Изменение отступов и выравнивания текста внутри num */
-    .number, .move {
-      margin: 0;
-      text-align: center;
-    }
-  
-  }
+
+}
