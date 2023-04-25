@@ -147,7 +147,7 @@
 
 
 
-/* Общие стили для мобильных устройств */
+
 @media only screen and (max-width: 600px) {
 
     .cards-container {
@@ -157,7 +157,7 @@
 
 
 
-    /* Установка высоты body на авто */
+
     .body {
         height: auto;
     }
@@ -171,7 +171,7 @@
 
     }
 
-    /* Изменение высоты imgCard */
+
     .card__image {
         height: 200px;
     }
@@ -185,7 +185,7 @@
         font-size: 14px;
     }
 
-    /* Изменение отступов и выравнивания текста */
+
     .card__date,
     .card__title {
         margin: 10px 0;
