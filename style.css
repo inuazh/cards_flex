@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .body {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     height: 97svh;
@@ -34,7 +34,6 @@
 .card:hover .card__image {
     height: 300px;
     align-items: center;
-    filter: invert();
 }
 
 
@@ -45,16 +44,16 @@
     font-size: 12px;
 }
 
-.card__info_crimson {
+.card__date--crimson {
     color: crimson;
 
 }
 
-.card__info_green {
+.card__date--green {
     color: green;
 }
 
-.card__info_orange {
+.card__date--orange {
     color: rgb(248, 108, 1);
 }
 
@@ -155,9 +154,6 @@
         padding: 10px;
     }
 
-
-
-
     .body {
         height: auto;
     }
@@ -168,7 +164,6 @@
         min-width: 0;
         margin: 0;
         margin-bottom: 2svh;
-
     }
 
 
@@ -200,7 +195,6 @@
         padding: 0 10px;
         font-size: 12px;
     }
-
 
 
     .card__info-number,
